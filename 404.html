@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page not found - Nderi Kennels Elite Canine Services">
+    <title>Page Not Found • Nderi Kennels</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .error-container {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #0a0f0c 0%, #111613 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .error-container::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.05) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .error-content {
+            max-width: 700px;
+            padding: 2rem;
+            z-index: 2;
+        }
+
+        .error-code {
+            font-size: clamp(8rem, 20vw, 15rem);
+            font-weight: 800;
+            line-height: 1;
+            color: transparent;
+            -webkit-text-stroke: 3px rgba(212, 175, 55, 0.5);
+            margin-bottom: 1rem;
+            letter-spacing: -0.03em;
+        }
+
+        .error-code span {
+            color: #d4af37;
+            -webkit-text-stroke: 0;
+        }
+
+        .error-title {
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .error-message {
+            color: #9ca3af;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .paw-print {
+            font-size: 4rem;
+            color: rgba(212, 175, 55, 0.2);
+            margin: 2rem 0;
+        }
+
+        .suggestions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .suggestion-link {
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 50px;
+            padding: 0.75rem 1.5rem;
+            color: #d4af37;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .suggestion-link:hover {
+            background: #d4af37;
+            color: #0a0f0c;
+            transform: translateY(-2px);
+        }
+
+        .btn-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: #d4af37;
+            color: #0a0f0c;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .btn-home:hover {
+            background: #c4a02e;
+            transform: translateY(-2px);
+        }
+
+        .search-box {
+            margin: 2rem auto;
+            max-width: 400px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 50px;
+            color: white;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #d4af37;
+        }
+
+        .search-input::placeholder {
+            color: #6b7280;
+        }
+
+        @media (max-width: 768px) {
+            .error-container {
+                min-height: 70vh;
+            }
+
+            .suggestions {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .suggestion-link {
+                width: 100%;
+                max-width: 250px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">NDERI <span>KENNELS</span></a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="ratecard.html">Ratecard</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="error-container">
+            <div class="error-content fade-in">
+                <div class="error-code">
+                    4<span>0</span>4
+                </div>
+                <div class="error-title">
+                    <i class="fas fa-paw" style="color: #d4af37; margin-right: 0.5rem;"></i>
+                    Page Not Found
+                </div>
+                <div class="error-message">
+                    Oops! It seems like this page has wandered off like a curious pup.<br>
+                    Don't worry, we'll help you find your way back.
+                </div>
+
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="Search our site..." id="searchInput" onkeypress="handleSearch(event)">
+                </div>
+
+                <div class="suggestions">
+                    <a href="index.html" class="suggestion-link">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                    <a href="services.html" class="suggestion-link">
+                        <i class="fas fa-shield-alt"></i> Services
+                    </a>
+                    <a href="training.html" class="suggestion-link">
+                        <i class="fas fa-dog"></i> Training
+                    </a>
+                    <a href="ratecard.html" class="suggestion-link">
+                        <i class="fas fa-tag"></i> Ratecard
+                    </a>
+                    <a href="gallery.html" class="suggestion-link">
+                        <i class="fas fa-images"></i> Gallery
+                    </a>
+                    <a href="contact.html" class="suggestion-link">
+                        <i class="fas fa-envelope"></i> Contact
+                    </a>
+                </div>
+
+                <div class="paw-print">
+                    <i class="fas fa-paw"></i>
+                    <i class="fas fa-paw" style="margin: 0 1rem;"></i>
+                    <i class="fas fa-paw"></i>
+                </div>
+
+                <a href="index.html" class="btn-home">
+                    <i class="fas fa-arrow-left"></i>
+                    Return to Homepage
+                </a>
+
+                <div style="margin-top: 2rem; color: #6b7280; font-size: 0.85rem;">
+                    <i class="fas fa-phone-alt"></i> Need help? Call us: 
+                    <a href="tel:+254705627844" style="color: #d4af37; text-decoration: none;">+254 705 627 844</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2>NDERI <span>KENNELS</span></h2>
+                <p style="color: #9ca3af; margin-bottom: 2rem;">Elite canine services in Nairobi since 2017. Protection, training, and care excellence.</p>
+                <div class="contact-block">
+                    <div class="contact-line">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:+254705627844">+254 705 627 844</a>
+                    </div>
+                    <div class="contact-line">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:nderiprotectiondogs@gmail.com">nderiprotectiondogs@gmail.com</a>
+                    </div>
+                    <div class="contact-line">
+                        <i class="fas fa-map-pin"></i>
+                        <span>Nairobi, Kenya</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 style="color: white; margin-bottom: 1.5rem; font-size: 1.3rem;">Connect</h3>
+                <div class="social-grid">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <p style="color: #d4af37; margin-top: 1rem;">@donnderi</p>
+            </div>
+            <div class="hours-block">
+                <h3 style="color: white; margin-bottom: 1.5rem;">Hours</h3>
+                <div class="hours-row">
+                    <span>Mon-Fri</span>
+                    <span class="bold">8:00 - 18:00</span>
+                </div>
+                <div class="hours-row">
+                    <span>Saturday</span>
+                    <span class="bold">9:00 - 16:00</span>
+                </div>
+                <div class="hours-row">
+                    <span>Sunday</span>
+                    <span class="bold">Closed</span>
+                </div>
+                <div class="hours-row" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(212,175,55,0.2);">
+                    <span>Emergency</span>
+                    <span class="bold" style="color: #d4af37;">24/7</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>© 2024 NDERI KENNELS — Excellence in Canine Services</div>
+            <div>
+                <i class="fas fa-paw" style="color: #d4af37;"></i>
+                <i class="fas fa-paw" style="color: #d4af37; margin: 0 0.5rem;"></i>
+                <i class="fas fa-paw" style="color: #d4af37;"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Search functionality
+        function handleSearch(event) {
+            if (event.key === 'Enter') {
+                const searchTerm = event.target.value.toLowerCase();
+                const pages = [
+                    { name: 'home', url: 'index.html', keywords: ['home', 'main', 'start'] },
+                    { name: 'about', url: 'about.html', keywords: ['about', 'company', 'history', 'mission'] },
+                    { name: 'services', url: 'services.html', keywords: ['services', 'protection', 'training', 'boarding', 'grooming'] },
+                    { name: 'training', url: 'training.html', keywords: ['training', 'obedience', 'protection', 'handler', 'course'] },
+                    { name: 'ratecard', url: 'ratecard.html', keywords: ['ratecard', 'pricing', 'cost', 'fees', 'price'] },
+                    { name: 'gallery', url: 'gallery.html', keywords: ['gallery', 'photos', 'images', 'pictures'] },
+                    { name: 'contact', url: 'contact.html', keywords: ['contact', 'reach', 'call', 'email', 'location'] }
+                ];
+
+                // Try to find matching page
+                let matchedPage = null;
+                for (const page of pages) {
+                    if (page.name === searchTerm || page.keywords.some(keyword => keyword.includes(searchTerm))) {
+                        matchedPage = page;
+                        break;
+                    }
+                }
+
+                if (matchedPage) {
+                    window.location.href = matchedPage.url;
+                } else if (searchTerm.trim() !== '') {
+                    // Show alert for no results
+                    alert('No matching pages found. Please try another search term or browse our menu above.');
+                }
+            }
+        }
+
+        // Mobile menu
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('show');
+            });
+        }
+    </script>
+</body>
+</html>
